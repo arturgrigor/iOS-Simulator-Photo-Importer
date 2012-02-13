@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE04924814E97AFF007587C2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE04924714E97AFF007587C2 /* README.md */; };
 		FED912B514E95326005C7E12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED912B414E95326005C7E12 /* UIKit.framework */; };
 		FED912B714E95326005C7E12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED912B614E95326005C7E12 /* Foundation.framework */; };
 		FED912B914E95326005C7E12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED912B814E95326005C7E12 /* CoreGraphics.framework */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE04924714E97AFF007587C2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		FED912B014E95326005C7E12 /* Photo Importer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Importer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED912B414E95326005C7E12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FED912B614E95326005C7E12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +105,7 @@
 		FED912BB14E95326005C7E12 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE04924714E97AFF007587C2 /* README.md */,
 				FED912D614E95354005C7E12 /* icon@2x.png */,
 				FED912D414E95352005C7E12 /* icon.png */,
 				FED912BC14E95326005C7E12 /* Photo Importer-Info.plist */,
@@ -188,6 +191,7 @@
 				FED912D514E95352005C7E12 /* icon.png in Resources */,
 				FED912D714E95354005C7E12 /* icon@2x.png in Resources */,
 				FED912E414E955CD005C7E12 /* SVProgressHUD.bundle in Resources */,
+				FE04924814E97AFF007587C2 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
