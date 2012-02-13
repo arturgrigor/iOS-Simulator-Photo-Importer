@@ -16,6 +16,10 @@
 		FED912C814E95326005C7E12 /* AGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED912C714E95326005C7E12 /* AGViewController.m */; };
 		FED912CB14E95326005C7E12 /* AGViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED912C914E95326005C7E12 /* AGViewController_iPhone.xib */; };
 		FED912CE14E95326005C7E12 /* AGViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED912CC14E95326005C7E12 /* AGViewController_iPad.xib */; };
+		FED912D514E95352005C7E12 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FED912D414E95352005C7E12 /* icon.png */; };
+		FED912D714E95354005C7E12 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED912D614E95354005C7E12 /* icon@2x.png */; };
+		FED912E414E955CD005C7E12 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FED912E114E955CD005C7E12 /* SVProgressHUD.bundle */; };
+		FED912E514E955CD005C7E12 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FED912E314E955CD005C7E12 /* SVProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +27,21 @@
 		FED912B414E95326005C7E12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FED912B614E95326005C7E12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FED912B814E95326005C7E12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FED912BC14E95326005C7E12 /* Photo Importer-Info.plist */ = {isa = PBXFileReference; path = "Photo Importer-Info.plist"; sourceTree = "<group>"; };
+		FED912BC14E95326005C7E12 /* Photo Importer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Photo Importer-Info.plist"; sourceTree = "<group>"; };
 		FED912BE14E95326005C7E12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FED912C014E95326005C7E12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FED912C214E95326005C7E12 /* Photo Importer-Prefix.pch */ = {isa = PBXFileReference; path = "Photo Importer-Prefix.pch"; sourceTree = "<group>"; };
-		FED912C314E95326005C7E12 /* AGAppDelegate.h */ = {isa = PBXFileReference; path = AGAppDelegate.h; sourceTree = "<group>"; };
+		FED912C214E95326005C7E12 /* Photo Importer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photo Importer-Prefix.pch"; sourceTree = "<group>"; };
+		FED912C314E95326005C7E12 /* AGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGAppDelegate.h; sourceTree = "<group>"; };
 		FED912C414E95326005C7E12 /* AGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAppDelegate.m; sourceTree = "<group>"; };
-		FED912C614E95326005C7E12 /* AGViewController.h */ = {isa = PBXFileReference; path = AGViewController.h; sourceTree = "<group>"; };
+		FED912C614E95326005C7E12 /* AGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGViewController.h; sourceTree = "<group>"; };
 		FED912C714E95326005C7E12 /* AGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGViewController.m; sourceTree = "<group>"; };
 		FED912CA14E95326005C7E12 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AGViewController_iPhone.xib; sourceTree = "<group>"; };
 		FED912CD14E95326005C7E12 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AGViewController_iPad.xib; sourceTree = "<group>"; };
+		FED912D414E95352005C7E12 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		FED912D614E95354005C7E12 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
+		FED912E114E955CD005C7E12 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		FED912E214E955CD005C7E12 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		FED912E314E955CD005C7E12 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +61,7 @@
 		FED912A514E95326005C7E12 = {
 			isa = PBXGroup;
 			children = (
+				FED912DF14E955CD005C7E12 /* Externals */,
 				FED912BA14E95326005C7E12 /* Photo Importer */,
 				FED912B314E95326005C7E12 /* Frameworks */,
 				FED912B114E95326005C7E12 /* Products */,
@@ -93,12 +103,32 @@
 		FED912BB14E95326005C7E12 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FED912D614E95354005C7E12 /* icon@2x.png */,
+				FED912D414E95352005C7E12 /* icon.png */,
 				FED912BC14E95326005C7E12 /* Photo Importer-Info.plist */,
 				FED912BD14E95326005C7E12 /* InfoPlist.strings */,
 				FED912C014E95326005C7E12 /* main.m */,
 				FED912C214E95326005C7E12 /* Photo Importer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FED912DF14E955CD005C7E12 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				FED912E014E955CD005C7E12 /* SVProgressHUD */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		FED912E014E955CD005C7E12 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FED912E114E955CD005C7E12 /* SVProgressHUD.bundle */,
+				FED912E214E955CD005C7E12 /* SVProgressHUD.h */,
+				FED912E314E955CD005C7E12 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +185,9 @@
 				FED912BF14E95326005C7E12 /* InfoPlist.strings in Resources */,
 				FED912CB14E95326005C7E12 /* AGViewController_iPhone.xib in Resources */,
 				FED912CE14E95326005C7E12 /* AGViewController_iPad.xib in Resources */,
+				FED912D514E95352005C7E12 /* icon.png in Resources */,
+				FED912D714E95354005C7E12 /* icon@2x.png in Resources */,
+				FED912E414E955CD005C7E12 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +201,7 @@
 				FED912C114E95326005C7E12 /* main.m in Sources */,
 				FED912C514E95326005C7E12 /* AGAppDelegate.m in Sources */,
 				FED912C814E95326005C7E12 /* AGViewController.m in Sources */,
+				FED912E514E955CD005C7E12 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +286,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Photo Importer/Photo Importer-Prefix.pch";
 				INFOPLIST_FILE = "Photo Importer/Photo Importer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -263,6 +298,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Photo Importer/Photo Importer-Prefix.pch";
 				INFOPLIST_FILE = "Photo Importer/Photo Importer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -287,6 +323,7 @@
 				FED912D314E95326005C7E12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

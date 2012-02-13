@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AGViewController : UIViewController
+@interface AGViewController : UIViewController<UITextFieldDelegate>
+{
+    UILabel *pathLabel;
+    UITextField *pathTextField;
+    UIButton *importButton;
+    
+    NSMutableArray *filePaths;
+    
+    NSUInteger numberOfPhotos;
+    NSUInteger numberOfPhotosProcessed;
+    NSUInteger numberOfErrors;
+}
+
+@property (nonatomic, readonly) UILabel *pathLabel;
+@property (nonatomic, readonly) UITextField *pathTextField;
+@property (nonatomic, readonly) UIButton *importButton;
 
 @end
