@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FE04924814E97AFF007587C2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE04924714E97AFF007587C2 /* README.md */; };
+		FE4E239814EA72E500CB333E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FE4E239514EA72E500CB333E /* SVProgressHUD.bundle */; };
+		FE4E239914EA72E500CB333E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4E239714EA72E500CB333E /* SVProgressHUD.m */; };
 		FED912B514E95326005C7E12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED912B414E95326005C7E12 /* UIKit.framework */; };
 		FED912B714E95326005C7E12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED912B614E95326005C7E12 /* Foundation.framework */; };
 		FED912B914E95326005C7E12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED912B814E95326005C7E12 /* CoreGraphics.framework */; };
@@ -19,12 +21,13 @@
 		FED912CE14E95326005C7E12 /* AGViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED912CC14E95326005C7E12 /* AGViewController_iPad.xib */; };
 		FED912D514E95352005C7E12 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FED912D414E95352005C7E12 /* icon.png */; };
 		FED912D714E95354005C7E12 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED912D614E95354005C7E12 /* icon@2x.png */; };
-		FED912E414E955CD005C7E12 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FED912E114E955CD005C7E12 /* SVProgressHUD.bundle */; };
-		FED912E514E955CD005C7E12 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FED912E314E955CD005C7E12 /* SVProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE04924714E97AFF007587C2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		FE4E239514EA72E500CB333E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		FE4E239614EA72E500CB333E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		FE4E239714EA72E500CB333E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		FED912B014E95326005C7E12 /* Photo Importer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Importer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED912B414E95326005C7E12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FED912B614E95326005C7E12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,9 +44,6 @@
 		FED912CD14E95326005C7E12 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AGViewController_iPad.xib; sourceTree = "<group>"; };
 		FED912D414E95352005C7E12 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		FED912D614E95354005C7E12 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
-		FED912E114E955CD005C7E12 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		FED912E214E955CD005C7E12 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		FED912E314E955CD005C7E12 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +60,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE4E239314EA72E500CB333E /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E239414EA72E500CB333E /* SVProgressHUD */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		FE4E239414EA72E500CB333E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FE4E239514EA72E500CB333E /* SVProgressHUD.bundle */,
+				FE4E239614EA72E500CB333E /* SVProgressHUD.h */,
+				FE4E239714EA72E500CB333E /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		FED912A514E95326005C7E12 = {
 			isa = PBXGroup;
 			children = (
-				FED912DF14E955CD005C7E12 /* Externals */,
+				FE4E239314EA72E500CB333E /* Externals */,
 				FED912BA14E95326005C7E12 /* Photo Importer */,
 				FED912B314E95326005C7E12 /* Frameworks */,
 				FED912B114E95326005C7E12 /* Products */,
@@ -114,24 +132,6 @@
 				FED912C214E95326005C7E12 /* Photo Importer-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FED912DF14E955CD005C7E12 /* Externals */ = {
-			isa = PBXGroup;
-			children = (
-				FED912E014E955CD005C7E12 /* SVProgressHUD */,
-			);
-			path = Externals;
-			sourceTree = "<group>";
-		};
-		FED912E014E955CD005C7E12 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				FED912E114E955CD005C7E12 /* SVProgressHUD.bundle */,
-				FED912E214E955CD005C7E12 /* SVProgressHUD.h */,
-				FED912E314E955CD005C7E12 /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,8 +190,8 @@
 				FED912CE14E95326005C7E12 /* AGViewController_iPad.xib in Resources */,
 				FED912D514E95352005C7E12 /* icon.png in Resources */,
 				FED912D714E95354005C7E12 /* icon@2x.png in Resources */,
-				FED912E414E955CD005C7E12 /* SVProgressHUD.bundle in Resources */,
 				FE04924814E97AFF007587C2 /* README.md in Resources */,
+				FE4E239814EA72E500CB333E /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +205,7 @@
 				FED912C114E95326005C7E12 /* main.m in Sources */,
 				FED912C514E95326005C7E12 /* AGAppDelegate.m in Sources */,
 				FED912C814E95326005C7E12 /* AGViewController.m in Sources */,
-				FED912E514E955CD005C7E12 /* SVProgressHUD.m in Sources */,
+				FE4E239914EA72E500CB333E /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
