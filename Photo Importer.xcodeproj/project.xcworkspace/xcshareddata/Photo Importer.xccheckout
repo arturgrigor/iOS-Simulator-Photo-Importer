@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9AC12386-89D6-4A27-8DB3-4C745ECE0C06</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Photo Importer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8FEF1117-EAE1-446E-B739-3761D30420D0</key>
+		<string>https://github.com/guoyongzhen/iOS-Simulator-Photo-Importer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Photo Importer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8FEF1117-EAE1-446E-B739-3761D30420D0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/guoyongzhen/iOS-Simulator-Photo-Importer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8FEF1117-EAE1-446E-B739-3761D30420D0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8FEF1117-EAE1-446E-B739-3761D30420D0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>newdir</string>
+		</dict>
+	</array>
+</dict>
+</plist>
