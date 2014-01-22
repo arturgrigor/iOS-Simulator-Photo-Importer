@@ -9,6 +9,8 @@
 #import "AGViewController.h"
 
 #import "SVProgressHUD.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <ImageIO/CGImageSource.h>
 
 @interface AGViewController ()
 
@@ -122,7 +124,7 @@
     [tapGestureRecognizer setNumberOfTapsRequired:1];
     [tapGestureRecognizer setCancelsTouchesInView:NO];
     [self.view addGestureRecognizer:tapGestureRecognizer];
-    [tapGestureRecognizer release]; 
+    [tapGestureRecognizer release];
 }
 
 - (void)viewDidUnload
@@ -206,36 +208,39 @@
 
 - (void)importNext
 {
-    UIImage *image = [UIImage imageWithContentsOfFile:[self.filePaths lastObject]];
-    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil); 
+    NSData *imgdata=[NSData dataWithContentsOfFile:[self.filePaths lastObject]];
+    UIImage *img=[UIImage imageWithData:imgdata];
+    CGImageSourceRef source = CGImageSourceCreateWithData((CFMutableDataRef)imgdata, NULL);
+    NSDictionary *metadata = (NSDictionary *) CGImageSourceCopyPropertiesAtIndex(source, 0, NULL);
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    
+    [library writeImageToSavedPhotosAlbum:[img CGImage] metadata:metadata completionBlock:^(NSURL *assetURL, NSError *error )
+     {
+         numberOfPhotosProcessed++;
+         
+         if (error)
+         {
+             numberOfErrors++;
+             
+             [SVProgressHUD dismissWithError:error.localizedDescription];
+             return;
+         }
+         
+         if (numberOfPhotosProcessed == numberOfPhotos) {
+             if (numberOfErrors == 0)
+                 [SVProgressHUD dismissWithSuccess:@"Success." afterDelay:3];
+             else
+                 [SVProgressHUD dismissWithError:[NSString stringWithFormat:@"%d of %d have failed.", numberOfErrors, numberOfPhotos] afterDelay:3];
+         }
+         else
+             [SVProgressHUD showWithStatus:[NSString stringWithFormat:@"%d of %d", numberOfPhotosProcessed, numberOfPhotos]];
+         
+         if (numberOfPhotosProcessed < numberOfPhotos)
+             [self importNext];
+         
+     }];
     
     [self.filePaths removeLastObject];
-}
-
-- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
-{
-    numberOfPhotosProcessed++;
-    
-    if (error)
-    {
-        numberOfErrors++;
-        
-        [SVProgressHUD dismissWithError:error.localizedDescription];
-        return;        
-    }
-    
-    if (numberOfPhotosProcessed == numberOfPhotos) {
-        if (numberOfErrors == 0)
-            [SVProgressHUD dismissWithSuccess:@"Success." afterDelay:3];
-        else
-            [SVProgressHUD dismissWithError:[NSString stringWithFormat:@"%d of %d have failed.", numberOfErrors, numberOfPhotos] afterDelay:3];
-    }
-    else
-        [SVProgressHUD showWithStatus:[NSString stringWithFormat:@"%d of %d", numberOfPhotosProcessed, numberOfPhotos]];
-    
-    // Continue importing
-    if (numberOfPhotosProcessed < numberOfPhotos)
-        [self importNext];
 }
 
 @end
